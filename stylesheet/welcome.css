@@ -1,0 +1,29 @@
+body
+{
+  background: url("BITS_BACK_1.jpeg");
+  background-size: cover;
+}
+
+.box
+{
+  background-color: rgba(23,23,23,0.5);
+  width:400px;
+  text-align: center;
+  margin-top:11.6%;
+  margin-left: 35%;
+  padding: 2px;
+  border-radius: 80px;
+}
+
+h1{
+  font-size: 50px;
+  margin-top: 18px;
+  font-family: Arial;
+  color: rgba(254,254,254,0.9)
+}
+p
+{
+  font-size: 30px;
+  font-family: Arial;
+  color: rgba(254,254,254,0.9)
+}

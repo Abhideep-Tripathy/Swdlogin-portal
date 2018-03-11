@@ -1,0 +1,96 @@
+.logo{
+  max-width: 280px;
+  max-height: 280px;
+  padding: 20px;
+}
+h1{
+  text-align: center;
+  font-size: 35px;
+  margin-top:0px;
+  font-family:Trebuchet MS;
+}
+
+.box{
+  max-width:320px;
+  margin-top:7%;
+  margin-left:39%;
+  background-color: rgba(82, 123, 196,0.5) ;
+  padding-bottom: 20px;
+  padding: 20px;
+  border-radius: 40px;
+  height: 365px;
+}
+.button{
+  margin-left: 29%;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: rgba(82, 123, 196,0.5) ;
+  border-width:0px;
+  padding:10px;
+  border-radius:30px;
+
+}
+label{
+  font-size: 25px
+}
+form{
+  padding-left: 20px;
+  margin-bottom: 16px;
+}
+body{
+  height: auto;
+  background: url("BITS_BACK_2.jpeg");
+  background-size: cover;
+}
+input{
+  background-color: rgba(254, 254, 254,0.5);
+  padding: 4px;
+  border-width: 0px;
+
+}
+.button:hover{
+  margin-left: 29%;
+  margin-top: 20px;
+  font-size: 20px;
+  background-color: rgba(2, 123, 196,0.8) ;
+  border-width:0px;
+  padding:10px;
+  border-radius:30px;
+}
+p{
+  font-size: 20px;
+  text-align: center;
+  font-family: arial;
+}
+a{
+  text-decoration: none;
+  background-color: rgba(82, 123, 196,0.5);
+  padding:10px;
+  font-family: sans-serif;
+  font-size:20px;
+  margin-left: 70px;
+  color:rgb(0,0,0);
+  border-radius:30px;
+}
+a:hover{
+  text-decoration: none;
+  background-color: rgba(2, 123, 196,0.8);
+  padding:10px;
+  font-family: sans-serif;
+  font-size:20px;
+  margin-left: 70px;
+  color:rgb(0,0,0);
+  border-radius:30px;
+}
+.namelabel{
+  margin-left: 38px;
+}
+.idlabel{
+  margin-left: 78px;
+}
+.emaillabel{
+  margin-left: 26px;
+}
+.passwordlabel{
+  margin-left: 4px;
+}
