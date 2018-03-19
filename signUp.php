@@ -11,6 +11,16 @@ if (isset($_POST['button1']))
   $dbuser = "root";
   $dbpass = "";
 
+  $pass_len=strlen($var_password);
+  $reg_alpha=preg_match("/[a-zA-Z]+/",$var_password);
+  $reg_num=preg_match("/[0-9]+/",$var_password);
+  $pattern = '/[\'\/~`\!@#\$%\^&\*\(\)_\-\+=\{\}\[\]\|;:"\<\>,\.\?\\\]/';
+  $reg_special=preg_match($pattern, $var_password);
+
+if($var_username !='' && $var_password !='' && $var_Id !='' && $var_Email !='' && $var_name !='' )
+{
+  if($pass_len>8 && $reg_alpha && $reg_num && $reg_special)
+  {
   $conn = mysqli_connect($dbhost,$dbuser,$dbpass);
   if(!$conn)
     die('not connected');
@@ -29,18 +39,20 @@ if (isset($_POST['button1']))
             "PRIMARY KEY ( Username )); ";
 
             mysqli_query( $conn , $createTable );
-
-  if($var_username !='' && $var_password !='')
-    {
+            
       $sql_insert="INSERT INTO userDetails ".
       "VALUES('$var_name','$var_Id','$var_Email','$var_username', '$hassed_pass');";
       mysqli_query($conn,$sql_insert);
       mysqli_close($conn);
         echo "<script type='text/javascript'>alert('Account Created');</script>";
-    }
-  else {
-    echo "<script type='text/javascript'>alert('fill all the fields');</script>";
   }
+  else
+  echo "<script type='text/javascript'>alert('Password should more than 8 character including a alphabet, a number and a special character');</script>";
+}
+
+else
+echo "<script type='text/javascript'>alert('fill all the fields') </script>";
+
 }
 ?>
 
